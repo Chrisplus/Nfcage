@@ -1,0 +1,56 @@
+{
+  "name": "Shenzhen Tong",
+  "issuer": "SZT",
+  "protocol": "iso7816",
+  "applications": [
+    {
+      "id": "PAY.SZT",
+      "no": {
+        "sfi": "0x15",
+        "loc": 16,
+        "len": 4,
+        "type": "cn",
+        "endian": "little"
+      },
+      "balance": {
+        "isEP": true
+      },
+      "transaction": {
+        "sfi": "0x18",
+        "len": 23,
+        "count": 10,
+        "record": {
+          "index": {
+            "loc": 0,
+            "len": 2,
+            "type": "b"
+          },
+          "amount": {
+            "loc": 5,
+            "len": 4,
+            "type": "b"
+          },
+          "type": {
+            "loc": 9,
+            "len": 1,
+            "type": "cn"
+          },
+          "terminal": {
+            "loc": 10,
+            "len": 6,
+            "type": "cn"
+          },
+          "timestamp": {
+            "loc": 16,
+            "len": 7,
+            "type": "cn"
+          }
+        }
+      },
+      "raw": {
+        "type": "binary",
+        "sfi": "0x16"
+      }
+    }
+  ]
+}

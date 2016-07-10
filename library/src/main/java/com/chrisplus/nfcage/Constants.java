@@ -12,17 +12,11 @@
  * limitations under the License.
  */
 
-package com.chrisplus.nfcage.sample;
+package com.chrisplus.nfcage;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
+/**
+ * Created by chrisplus on 10/7/16.
+ */
+public class Constants {
+    public static final String TAG = Constants.class.getSimpleName();
 }
