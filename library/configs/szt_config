@@ -12,46 +12,46 @@
   ~ limitations under the License.
   -->
 
-<SmarCard>
-    <CardName>Shenzhen Tong</CardName>
-    <IssuerName>SZT</IssuerName>
-    <Protocol>Iso7816</Protocol>
+<smartcard>
+    <name>Shenzhen Tong</name>
+    <issuer>SZT</issuer>
+    <proto>Iso7816</proto>
 
-    <Application id="PAY.SZT">
-        <CardNo
+    <application id="PAY.SZT">
+        <no
                 sfi="0x15"
                 loc="16"
                 len="4"
                 type="cn"
                 endian="little"/>
 
-        <CardBalance
+        <balance
                 isEP="true"/>
 
-        <CardTransaction
+        <transacation
                 sfi="0x18"
                 len="23"
                 count="10">
-            <CardTransCount
+            <count
                     loc="0"
                     len="2"
                     type="b"/>
-            <CardTransAmount
+            <amont
                     loc="5"
                     len="4"
                     type="b"/>
-            <CardTransType
+            <type
                     loc="9"
                     len="1"
                     type="b"/>
-            <CardTransTerminalSerial
+            <terminal
                     loc="10"
                     len="6"
                     type="cn"/>
-            <CardTransTime
+            <timestamp
                     loc="16"
                     len="7"
                     type="cn"/>
-        </CardTransaction>
-    </Application>
-</SmarCard>
+        </transacation>
+    </application>
+</smartcard>
